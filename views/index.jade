@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  table.table.table-dark
+    thead
+      tr
+        th ID
+        th Content
+        th Label
+        th(width="20%")
+    tbody#list_content
+      tr
+        td(colspan=4) Loading...
+  
+  br
+  br
+  script(src="/javascripts/jquery-3.3.1.min.js")
+  script(src="/javascripts/index.js")
