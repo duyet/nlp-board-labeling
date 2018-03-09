@@ -1,7 +1,7 @@
 # nlp-board-labeling
 Dashboard for labeling NLP
 
-!(screenshot.png)[screenshot.png]
+![screenshot.png](screenshot.png)
 
 # Installation
 
