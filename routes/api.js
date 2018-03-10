@@ -1,11 +1,21 @@
 var express = require('express');
 var router = express.Router();
+var json2csv = require('json2csv').parse;
 
 var Data = require('../utils/db').Data;
 
 router.get('/fetch_data', function(req, res, next) {
   new Data().orderBy('content_length', 'ASC').fetchAll().then(data => {
-  	res.send(data);
+    res.send(data);
+  })
+});
+
+router.get('/report.csv', function(req, res, next) {
+  new Data().orderBy('content_length', 'ASC').fetchAll().then(data => {
+    res.attachment('report.csv');
+    data = JSON.parse(JSON.stringify(data))
+    data = json2csv(data);
+    res.status(200).send(data);
   })
 });
 
