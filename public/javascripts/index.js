@@ -30,7 +30,7 @@ $(document).ready(function() {
 			var id_link = "<a href='"+ data[i].article_link +"' target='_blank'>"+ data[i].id +"<a/>";
 			var btns = [
 				"<a class='btn btn-danger btn-label' data-id='"+ data[i].id +"' data-label='-1' href='#'>Negative</a>",
-				"<a class='btn btn-outline-primary btn-label' data-id='"+ data[i].id +"' data-label='0' href='#'>Neutral</a>",
+				"<a class='btn btn-outline-primary btn-outline-light btn-label' data-id='"+ data[i].id +"' data-label='0' href='#'>Neutral</a>",
 				"<a class='btn btn-success btn-label' data-id='"+ data[i].id +"' data-label='1' href='#'>Positive</a>",
 			];
 
