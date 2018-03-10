@@ -27,12 +27,19 @@ $(document).ready(function() {
 
 		var html = [];
 		for (var i in data) {
+			var id_link = "<a href='"+ data[i].article_link +"' target='_blank'>"+ data[i].id +"<a/>";
+			var btns = [
+				"<a class='btn btn-danger btn-label' data-id='"+ data[i].id +"' data-label='-1' href='#'>Negative</a>",
+				"<a class='btn btn-outline-primary btn-label' data-id='"+ data[i].id +"' data-label='0' href='#'>Neutral</a>",
+				"<a class='btn btn-success btn-label' data-id='"+ data[i].id +"' data-label='1' href='#'>Positive</a>",
+			];
+
 			html.push(
 				$('<tr class="" />').addClass(getLabelClass(data[i].label))
-					.append($('<td />').html(data[i].id).addClass('id'))
+					.append($('<td />').html(id_link).addClass('id'))
 					.append($('<td />').html(data[i].content).addClass('content'))
 					.append($('<td />').html(data[i].label).addClass('label'))
-					.append($('<td />').html("<a class='btn btn-danger btn-label' data-id='"+ data[i].id +"' data-label='-1' href='#'>Negative</a> <a class='btn btn-success btn-label' data-id='"+ data[i].id +"' data-label='1' href='#'>Positive</a>"))
+					.append($('<td />').html(btns.join(" ")))
 			);
 		}
 

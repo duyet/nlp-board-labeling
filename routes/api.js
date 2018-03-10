@@ -4,7 +4,7 @@ var router = express.Router();
 var Data = require('../utils/db').Data;
 
 router.get('/fetch_data', function(req, res, next) {
-  new Data().fetchAll().then(data => {
+  new Data().orderBy('content_length', 'ASC').fetchAll().then(data => {
   	res.send(data);
   })
 });
