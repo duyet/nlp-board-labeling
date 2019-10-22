@@ -13,7 +13,7 @@
     "express": "4.17.1",
     "fast-csv": "2.4.1",
     "jade": "1.11.0",
-    "json2csv": "4.5.2",
+    "json2csv": "4.5.4",
     "knex": "0.19.5",
     "morgan": "1.9.1",
     "serve-favicon": "2.4.5",
