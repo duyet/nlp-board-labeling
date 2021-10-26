@@ -8,7 +8,7 @@
   "dependencies": {
     "body-parser": "1.19.0",
     "bookshelf": "0.15.2",
-    "cookie-parser": "1.4.4",
+    "cookie-parser": "1.4.5",
     "debug": "2.6.9",
     "express": "4.17.1",
     "fast-csv": "4.3.6",
