@@ -9,7 +9,7 @@
     "body-parser": "1.19.2",
     "bookshelf": "1.2.0",
     "cookie-parser": "1.4.6",
-    "debug": "4.3.3",
+    "debug": "4.3.4",
     "express": "4.17.3",
     "fast-csv": "4.3.6",
     "jade": "1.11.0",
