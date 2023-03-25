@@ -14,7 +14,7 @@
     "fast-csv": "4.3.6",
     "jade": "1.11.0",
     "json2csv": "5.0.7",
-    "knex": "2.3.0",
+    "knex": "2.4.0",
     "morgan": "1.10.0",
     "serve-favicon": "2.5.0",
     "sqlite3": "5.1.5"
